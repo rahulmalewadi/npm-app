@@ -37,6 +37,6 @@ jobs:
         registry-url: https://npm.pkg.github.com/
         scope: '@rahulmalewadi'
     
-    - run: npm publish $(ls *.tgz)
+    - run: npm publish 
       env:
         NODE_AUTH_TOKEN: ${{secrets.PAT_TOKEN}}
