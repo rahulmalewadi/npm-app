@@ -25,7 +25,7 @@ jobs:
     name: "Publish to GitHub Packages"
     needs: [package]
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'pavankumar636'
+   
     steps:
     - name: Upload
       uses: actions/download-artifact@v2
